@@ -18,7 +18,7 @@ var gulp         = require('gulp'),
 gulp.task('slim', function(){
   gulp.src("./src/slim/*.slim")
     .pipe(slim({
-      pretty: true
+      pretty: false
     }))
     .pipe(gulp.dest(""));
 });
