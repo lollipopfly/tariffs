@@ -15,3 +15,7 @@ Test Task 1
 - Сминифицировать и сконкатенировать sass и slim `gulp`
 
 - Запустить сервер Browser-sync `gulp serve`
+
+##Примечание:
+
+- Media queries в ie8-9 работают на веб сервере
