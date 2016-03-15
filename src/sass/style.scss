@@ -10,7 +10,7 @@
 .plan {
 	float: left;
 	padding-bottom: 13px;
-	margin-right: 20px;
+	margin: 0 1%;
 	width: 23%;
 	background: $white;
 	text-align: center;
@@ -18,7 +18,6 @@
 	box-shadow: 1px 1px 1px rgba(0,0,0, .1);
 	cursor: pointer;
 	transition: transform $plan_duration;
-	overflow: hidden;
 
 	&:hover {
 		transform: scale(1.1);
@@ -37,10 +36,10 @@
 		}
 
 		.plan__btn {
-				background: $orange;
-				border-color: $orange;
-				color: $white;
-			}
+			background: $orange;
+			border-color: $orange;
+			color: $white;
+		}
 	}
 }
 
@@ -49,6 +48,7 @@
 	font-size: 34px;
 	font-weight: 300;
 	color: #3e4f6a;
+	border-radius: 5px 5px 0 0;
 	transition: background $plan_duration;
 }
 
@@ -108,7 +108,25 @@
 \*------------------------------------*/
 
 @media screen and (max-width: $medium_size) {
+	.wrap {
+		width: 95%;
+	}
 
+	.plan {
+		width: 48%;
+		margin-bottom: 2%;
+	}
+}
+
+@media screen and (max-width: $small_size) {
+	.wrap {
+		width: 90%;
+	}
+
+	.plan {
+		width: 100%;
+		margin: 0 0 2%;
+	}
 }
 
 

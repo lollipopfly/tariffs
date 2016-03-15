@@ -8,7 +8,6 @@ var gulp         = require('gulp'),
 	concat       = require('gulp-concat'),
 	uglify       = require('gulp-uglify'),
 	pxtorem      = require('postcss-pxtorem'),
-	selectors    = require('postcss-custom-selectors'),
 	plumber      = require('gulp-plumber'),
 	notify       = require("gulp-notify");
 
@@ -32,7 +31,6 @@ gulp.task('slim', function(){
 gulp.task('sass', function() {
   var processors = [
 	autoprefixer({ browsers: ['last 20 versions'] }),
-	 selectors,
 	 size,
 	 pxtorem
   ];
