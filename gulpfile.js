@@ -45,20 +45,6 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('dist/css/'));
 });
 
-
-/*------------------------------------*\
-    Uglify
-\*------------------------------------*/
-
-gulp.task('compress', function() {
-	return gulp.src(['src/js/common.js'])
-		.pipe(plumber())
-		.pipe(concat('global.min.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('dist/js/'));
-});
-
-
 /*------------------------------------*\
 	Borwsersync server
 \*------------------------------------*/
@@ -79,7 +65,6 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('watch', function() {
 	gulp.watch('src/slim/**/*.slim', { interval: 500 }, ['slim', 'notify']);
 	gulp.watch('src/sass/**/*.scss', { interval: 500 }, ['sass', 'notify']);
-	gulp.watch('src/js/common.js', { interval: 500 }, ['compress', 'notify']);
 });
 
 /*------------------------------------*\
@@ -96,7 +81,7 @@ gulp.task('notify', function(a) {
 	Run default gulp tasks
 \*------------------------------------*/
 
-gulp.task('default', ['slim', 'sass', 'compress', 'watch']);
+gulp.task('default', ['slim', 'sass', 'watch']);
 
 
 /**
