@@ -40,13 +40,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/**
-* ----------------------------------------------------------------------------------------------------
-* FONTS
-* ----------------------------------------------------------------------------------------------------
-*/
-
-
 
 /**
 * ----------------------------------------------------------------------------------------------------
@@ -56,8 +49,10 @@ table {
 
 $white: #fff;
 $black: #000;
-$gray: #e3e3e3;
-
+$gray: #e2e2e2;
+$orange: #f7814d;
+$blue: #42546f;
+$blue_light: #8394ae;
 
 /**
 * ----------------------------------------------------------------------------------------------------
@@ -72,17 +67,24 @@ $gray: #e3e3e3;
 * MAIN STYLES
 * ----------------------------------------------------------------------------------------------------
 */
-
-.clearfix:after {
-	content: "";
-	display: block;
-	height: 0;
-	line-height: 0;
-	clear: both;
-	visibility: hidden;
-	display: inline-block;
+html {
+	font-size: 16px;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: $gray;
+}
+
+// .clearfix:after {
+// 	content: "";
+// 	display: block;
+// 	height: 0;
+// 	line-height: 0;
+// 	clear: both;
+// 	visibility: hidden;
+// 	display: inline-block;
+// }
 
 img {
 	max-width: 100%;
@@ -90,11 +92,11 @@ img {
 }
 
 a {
-	color:red;
+	text-decoration: none;
 	outline: none !important; // for firefox
 
 	&:--hoverous {
-			color: $black;
+		color: $black;
 	}
 }
 

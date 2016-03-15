@@ -1,0 +1,19 @@
+.wrap {
+	max-width: 1280px;
+	margin: 120px auto;
+}
+
+/*------------------------------------*\
+    Plans
+\*------------------------------------*/
+
+.plan {
+	float: left;
+	margin-right: 20px;
+	width: 23%;
+	background: $white;
+}
+
+.plan__title {
+	font-size: 34px;
+}

@@ -7,6 +7,7 @@ var gulp         = require('gulp'),
 	autoprefixer = require('autoprefixer'),
 	concat       = require('gulp-concat'),
 	uglify       = require('gulp-uglify'),
+	pxtorem      = require('postcss-pxtorem'),
 	selectors    = require('postcss-custom-selectors'),
 	plumber      = require('gulp-plumber'),
 	notify       = require("gulp-notify");
@@ -33,6 +34,7 @@ gulp.task('sass', function() {
 	autoprefixer({ browsers: ['last 20 versions'] }),
 	 selectors,
 	 size,
+	 pxtorem
   ];
 
   return gulp.src([
