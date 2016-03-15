@@ -1,5 +1,5 @@
 .wrap {
-	max-width: 1280px;
+	max-width: $large_size;
 	margin: 120px auto;
 }
 
@@ -9,7 +9,7 @@
 
 .plan {
 	float: left;
-	padding: 27px 0 13px;
+	padding-bottom: 13px;
 	margin-right: 20px;
 	width: 23%;
 	background: $white;
@@ -17,32 +17,39 @@
 	border-radius: 5px;
 	box-shadow: 1px 1px 1px rgba(0,0,0, .1);
 	cursor: pointer;
-	transition: transform .5s;
+	transition: transform $plan_duration;
+	overflow: hidden;
 
 	&:hover {
 		transform: scale(1.1);
-	}
 
-	&:hover .plan__price {
-		background: $orange;
-
-		.plan__price-month {
+		.plan__title {
+			background: $blue;
 			color: $white;
 		}
-	}
 
-	&:hover .plan__btn {
-		background: $orange;
-		border-color: $orange;
-		color: $white;
+		.plan__price {
+			background: $orange;
+
+			.plan__price-month {
+				color: $white;
+			}
+		}
+
+		.plan__btn {
+				background: $orange;
+				border-color: $orange;
+				color: $white;
+			}
 	}
 }
 
 .plan__title {
-	margin-bottom: 32px;
+	padding: 27px 0px 32px;
 	font-size: 34px;
 	font-weight: 300;
 	color: #3e4f6a;
+	transition: background $plan_duration;
 }
 
 .plan__price {
@@ -50,12 +57,12 @@
 	color: $white;
 	font-weight: bold;
 	padding: 16px 0;
-	transition: background .5s;
+	transition: background $plan_duration;
 }
 
 .plan__price-month {
 	color: $blue_light;
-	transition: color .5s;
+	transition: color $plan_duration;
 }
 
 .plan-offers {
@@ -87,12 +94,23 @@
 	border: 2px solid $blue;
 	border-radius: 2px;
 	text-transform: uppercase;
-	transition:  background .5s, border-color .5s;
+	transition: background $plan_duration,
+				border-color $plan_duration,
+				color $plan_duration;
 
 	&:--hoverous {
 		text-decoration: none;
 	}
 }
+
+/*------------------------------------*\
+    @media queris
+\*------------------------------------*/
+
+@media screen and (max-width: $medium_size) {
+
+}
+
 
 
 

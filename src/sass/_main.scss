@@ -53,6 +53,11 @@ $gray: #e2e2e2;
 $orange: #f7814d;
 $blue: #42546f;
 $blue_light: #8394ae;
+$plan_duration: .5s;
+
+$large_size: 1280px;
+$medium_size: 1024px;
+$small_size: 480px;
 
 /**
 * ----------------------------------------------------------------------------------------------------
@@ -84,10 +89,6 @@ img {
 a {
 	text-decoration: none;
 	outline: none !important; // for firefox
-
-	// &:--hoverous {
-	// 	color: $black;
-	// }
 }
 
 /**
