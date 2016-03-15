@@ -1,0 +1,30 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-postcss": "*",
+    "gulp-uglify": "*",
+    "autoprefixer": "*",
+    "gulp.spritesmith": "*",
+    "gulp-sass": "*"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp-concat": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-slim": "^0.3.0",
+    "gulp-uglify": "*",
+    "postcss-custom-selectors": "*",
+    "postcss-size": "*",
+    "remove": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lollipop.fly",
+  "license": "ISC"
+}
