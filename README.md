@@ -1,1 +1,17 @@
-Simple boilerplate with Gulp & Postcss.
+Test Task 1
+===========
+
+##Установка:
+
+- Скачать ZIP архив
+
+- Установить Gulp глобально (если еще не установлен) `npm install -g gulp`
+
+
+Перейти в папку проекта:
+
+- Запустить установку пакетов (один раз) `npm install`
+
+- Сминифицировать и сконкатенировать sass и slim `gulp`
+
+- Запустить сервер Browser-sync `gulp serve`
